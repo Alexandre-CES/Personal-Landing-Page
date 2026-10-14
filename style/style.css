@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root{
+  --color-background:#080A10;
+  --color-surface:#10131C;
+
+  --color-text:#F2F2F5;
+  --color-muted: #858A99;
+
+  --color-primary:#EF49F2;
+  --color-secondary:#05DBF2;
+}
+
+body{
+  background-color: var(--color-background);
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+

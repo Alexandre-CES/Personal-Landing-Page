@@ -1,0 +1,16 @@
+.rounded{
+  border-radius: 35px;
+}
+
+.rounded-full{
+  border-radius: 100%;
+}
+
+.btn{
+  display: inline-block;
+  position: relative;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
