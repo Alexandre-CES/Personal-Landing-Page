@@ -7,12 +7,16 @@
   <link rel="shortcut icon" href="./images/icons/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/classes.css">
-  <link rel="stylesheet" href="./style/components.css">nk
+  <link rel="stylesheet" href="./style/components.css">
+  <link rel="stylesheet" href="/style/pages/index.css">
 </head>
 <body>
-  <nav>
+  <header>
+    <nav>
     <a href="./index.html" class="btn">
+      <div>
         <img src="./images/icons/home.svg" alt="Botão Home">
+      </div>
       <div>
         Home
       </div>
@@ -42,46 +46,47 @@
       </div>
     </a>
   </nav>
+  </header>
   <main>
     <section id="introduction">
       <div>
-        <h1>
-          Olá, sou o <span>Alexandre</span>
+        <h1 class="text-center-sm">
+          Olá, sou o <span class="text-secondary">Alexandre</span>
         </h1>
-        <div>
+        <div id="logotipo">
           <img src="./images/logo.png" alt="Logotipo">
         </div>
-        <h2>
-          Desenvolvedor de Software
-        </h2>
-        <p>Desenvolvendo softwares, experimentando tecnologias e evoluindo.</p>
+        <div id="introduction-texts">
+          <h2 class="text-primary">
+            Desenvolvedor de Software
+          </h2>
+          <p class="text-muted">Desenvolvendo softwares, experimentando tecnologias e evoluindo.</p>
+        </div>
       </div>
-      <div>
-        <div><img src="./images/icons/github.svg" alt="Github"></div>
-        <div><img src="./images/icons/instagram.svg" alt="Instagram"></div>
-        <div><img src="./images/icons/facebook.svg" alt="Facebook"></div>
+      <div id="social-medias">
+        <a href="" class="btn"><img src="./images/icons/github.svg" alt="Github"></a>
+        <a href="" class="btn"><img src="./images/icons/instagram.svg" alt="Instagram"></a>
+        <a href="" class="btn"><img src="./images/icons/facebook.svg" alt="Facebook"></a>
       </div>
-    </section>
-    <section id="code-block">
-      <div>
-        <div>
+    
+      <div id="code-block">
+        <div class="rounded">
           <p>developer.py</p>
-        </div>
-        <div>
-<pre><code>
-1  <span>class</span> <span>Developer</span>:
-2     name = <span>&apos;Alexandre&apos;</span>
-3     function = <span>&apos;Developer&apos;</span>
-4     available = <span>True</span>
+          <div>
+        <pre><code>1  <span class="text-primary">class</span> <span class="text-secondary">Developer</span>:
+2     name = <span class="text-string">&apos;Alexandre&apos;</span>
+3     function = <span class="text-string">&apos;Developer&apos;</span>
+4     available = <span class="text-secondary">True</span>
 5
-6  <span>def</span> <span>Hello(self)</span>:
-7     print(<span>&apos;Welcome!&apos;</span>)
+6  <span class="text-primary">def</span> <span class="text-secondary">Hello(<span class="text-primary">self</span>)</span>:
+7     <span class="text-text">print(<span class="text-string">&apos;Welcome!&apos;</span>)</span>
 8
-</code></pre>
-        </div>
-        <div>
-          <p>SyntaxError: Nothing found at line 8</p>
-          <p>But there is nothing here.</p>
+</code></pre> 
+          </div>
+          <div>
+            <p>SyntaxError: Nothing found at line 8</p>
+            <p>But there is nothing here.</p>
+          </div>
         </div>
       </div>
     </section>

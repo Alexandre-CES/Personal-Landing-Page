@@ -1,0 +1,116 @@
+
+/* *Introduction */
+
+section#introduction{
+  margin-bottom: 150px;
+}
+
+#logotipo{
+  margin: 30px 0px;
+  text-align: center;
+  
+}
+#logotipo img{
+  border-radius: 100%;
+  width: 50%;
+}
+
+#introduction-texts{
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+}
+
+#social-medias{
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#social-medias > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  padding: 5px;
+  border: 1px solid var(--color-muted);
+  border-radius: 10px;
+  background-color: var(--color-surface);
+}
+
+#social-medias > a:nth-child(1):hover{
+  
+}
+#social-medias > a:nth-child(2){
+  
+}
+#social-medias > a:nth-child(3):hover{
+  
+}
+
+/* Code block */
+div#code-block{
+  color: var(--color-muted);
+}
+
+div#code-block > div{
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
+  background-color: var(--color-surface);
+  
+}
+
+div#code-block > div > p{
+  margin-bottom: 5px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 0.8em;
+}
+
+div#code-block > div > div:nth-child(2){
+  
+  padding: 10px 20px;
+  border-top: 1px solid var(--color-muted);
+  border-bottom: 1px solid var(--color-muted);
+}
+
+div#code-block > div > div:nth-child(3){
+  margin: 15px 0px;
+  padding: 1px 20px;
+  font-size: 0.8em;
+  background-color: rgba(200,50,50, 0.5);
+}
+
+div#code-block > div > div:nth-child(3) > p:nth-child(1){
+  color: rgb(255, 81, 81);
+}
+div#code-block > div > div:nth-child(3) > p:nth-child(2){
+  color: rgb(188, 41, 41);
+}
+
+section#my-function{
+  margin: 0px 10%;
+}
+
+section#my-function h2{
+  margin-bottom: 20px;
+}
+
+section#my-function > div{
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width:1024px) {
+  section#my-function > div{
+    flex-direction: column;
+  }
+}
+
+section#my-function article{
+  padding: 20px 15px;
+  border-radius: 25px;
+  background-color: var(--color-surface);
+}
