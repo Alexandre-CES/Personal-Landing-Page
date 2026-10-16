@@ -1,0 +1,56 @@
+section#contacts{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (max-width:1024px) {
+  section#contacts{
+    flex-direction: column;
+  }
+}
+
+section#contacts > article{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 30px;
+  border-radius: 35px;
+  background-color: var(--color-surface);
+}
+
+section#contacts > article > div:first-child{
+  display: flex;
+  gap: 10px;
+}
+
+section#contacts .icon{
+  width: 30px;
+  height: 30px;
+}
+
+section#contacts .link-icon{
+  mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  background-color: var(--color-secondary);
+}
+
+section#contacts .whatsapp-icon{
+  mask: url('../../images/icons/whatsapp.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/whatsapp.svg') center / contain no-repeat;
+  background-color: var(--color-primary);
+}
+section#contacts .email-icon{
+  mask: url('../../images/icons/email.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/email.svg') center / contain no-repeat;
+  background-color: var(--color-primary);
+}
+
+
+section#contacts h2{
+  font-size: 1em;
+}
+
+section#contacts p{
+  font-size: 0.7em;
+}

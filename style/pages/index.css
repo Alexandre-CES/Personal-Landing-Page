@@ -5,11 +5,18 @@ section#introduction{
   margin-bottom: 150px;
 }
 
+@media screen and (max-width:1024px){
+  h1{
+    text-align: center;
+  }
+}
+
 #logotipo{
   margin: 30px 0px;
   text-align: center;
   
 }
+
 #logotipo img{
   border-radius: 100%;
   width: 50%;
@@ -91,7 +98,7 @@ div#code-block > div > div:nth-child(3) > p:nth-child(2){
 }
 
 section#my-function{
-  margin: 0px 10%;
+  margin: 100px 10%;
 }
 
 section#my-function h2{
@@ -114,3 +121,5 @@ section#my-function article{
   border-radius: 25px;
   background-color: var(--color-surface);
 }
+
+

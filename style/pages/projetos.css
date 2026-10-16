@@ -1,0 +1,63 @@
+
+
+section#projects{
+  margin: 40px 20px;
+}
+
+section#projects article{
+  padding: 20px 15px;
+  border-radius: 35px;
+  background-color: var(--color-surface);
+}
+
+section#projects article > div:first-child{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-muted);
+  border-radius: 35px 35px 0 0;
+}
+
+section#projects article img{
+  border-radius: 35px 35px 0 0;
+}
+
+section#projects .techs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+section#projects .techs div{
+  padding: 1px 5px;
+  border-radius: 15px;
+  color: var(--color-muted);
+  background-color: var(--color-background);
+}
+
+.project-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-links a {
+  display: flex;
+  gap: 5px;
+}
+
+.project-links .icon{
+  width: 16px;
+  height: 16px;
+}
+
+.project-links .github-icon{
+  mask: url('../../images/icons/github.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/github.svg') center / contain no-repeat;
+  background-color: var(--color-secondary);
+}
+.project-links .link-icon{
+  mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  background-color: var(--color-primary);
+}

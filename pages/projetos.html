@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/classes.css">
   <link rel="stylesheet" href="../style/components.css">
+  <link rel="stylesheet" href="/style/pages/projetos.css">
   
 </head>
 <body>
@@ -48,36 +49,34 @@
     </nav>
   </header>
   <main>
-    <h1>Meus projetos</h1>
-    <section>
+    <div class="page-title">
+      <h1>Meus projetos</h1>
+      <p>Projetos que fiz para desenvolver habilidades ou demonstrá-las</p>
+    </div>
+    <section id="projects">
       <article>
         <div>
           <img src="../images/sites/shopping-cart.png" alt="Imagem do projeto">
         </div>
         <div>
           <h2>Shopping Cart</h2>
-          <p>Sistema de compras com autenticação, carrinho persistido no armazenamento do navegador e registro de compras no banco de dados.</p>
+          <p class="text-muted">Sistema de compras com autenticação, carrinho persistido no armazenamento do navegador e registro de compras no banco de dados.</p>
         </div>
-        <div>
+        <div class="techs">
           <div>React</div>
           <div>Typescript</div>
           <div>Firebase</div>
         </div>
-        <div>
-          <a href="">
-            <div class="github-icon"></div><div>Repositório</div>
+        <div class="project-links">
+          <a href="https://github.com/Alexandre-CES/Shopping-cart" target="_blank" class="text-secondary btn">
+            <div class="icon github-icon"></div><div>Repositório</div>
           </a>
-          <a href="https://shopping-cart-blush-six.vercel.app" target="_blank">
-            <div><img src="" alt="">Demonstração</div>
+          <a href="https://shopping-cart-blush-six.vercel.app" target="_blank" class="text-primary btn">
+            <div class="icon link-icon"></div><div>Demonstração</div>
           </a>
         </div>
       </article>
-      <article>
-        
-      </article>
-      <article>
-
-      </article>
+      
     </section>
   </main>
 </body>
