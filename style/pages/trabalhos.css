@@ -1,0 +1,73 @@
+
+#job-selection{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#job-selection button{
+  color: var(--color-text);
+  font-size: 1.5em;
+}
+
+#job-selection span{
+  color: var(--color-muted);
+}
+
+section#jobs > article{
+  background-color: var(--color-surface);
+}
+
+section#jobs > article > div{
+  border-top: 1px solid var(--color-muted);
+}
+
+section#jobs > article h2{
+  font-size: 1.2em;
+}
+
+section#jobs > article img{
+  border-radius: 35px;
+}
+
+.business{
+  padding-top: 20px;
+  text-align: center;
+}
+
+div.logo-image img{
+  width: 200px;
+}
+
+.business h2{
+  margin: 10px;
+}
+
+.site{
+  padding: 20px;
+}
+
+.site-description{
+  padding: 40px 20px;
+}
+
+.site-description h2{
+  margin-bottom: 5px;
+}
+
+.site-link a{
+  display: flex;
+  gap: 10px;
+}
+
+.site-link .icon{
+  width: 16px;
+  height: 16px;
+}
+
+.site-link .link-icon{
+  mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  -webkit-mask: url('../../images/icons/link.svg') center / contain no-repeat;
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+}

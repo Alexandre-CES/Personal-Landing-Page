@@ -23,6 +23,10 @@ body{
   background-color: var(--color-background);
 }
 
+main{
+  margin-bottom: 100px;
+}
+
 h1{
   font-size: 1.5em;
 }
@@ -41,6 +45,11 @@ a{
 
 img{
   max-width: 100%;
+}
+
+button{
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width:1024px){

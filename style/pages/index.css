@@ -98,7 +98,7 @@ div#code-block > div > div:nth-child(3) > p:nth-child(2){
 }
 
 section#my-function{
-  margin: 100px 10%;
+  margin: 0 10%;
 }
 
 section#my-function h2{
