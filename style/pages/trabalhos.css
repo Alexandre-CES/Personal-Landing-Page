@@ -57,6 +57,7 @@ div.logo-image img{
 
 .site-link a{
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -68,6 +69,5 @@ div.logo-image img{
 .site-link .link-icon{
   mask: url('../../images/icons/link.svg') center / contain no-repeat;
   -webkit-mask: url('../../images/icons/link.svg') center / contain no-repeat;
-  background-color: var(--color-primary);
-  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
