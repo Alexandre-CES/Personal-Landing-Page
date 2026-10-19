@@ -47,3 +47,23 @@ section#projects article img{
   -webkit-mask: url('../../images/icons/link.svg') center / contain no-repeat;
   background-color: var(--color-primary);
 }
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  section#projects{
+    margin: 40px 60px;
+  }
+
+  .project-links{
+    margin: 10px;
+    font-size: 2em;
+  }
+
+  .project-links a {
+    gap: 10px;
+  }
+
+  .project-links .icon{
+    width: 32px;
+  height: 32px;
+  }
+}

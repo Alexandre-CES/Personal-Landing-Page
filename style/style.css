@@ -24,15 +24,8 @@ body{
 }
 
 main{
+  margin-top: 50px;
   margin-bottom: 100px;
-}
-
-h1{
-  font-size: 1.5em;
-}
-
-p{
-  color: var(--color-muted);
 }
 
 li{
@@ -51,6 +44,37 @@ button{
   border: none;
   background-color: transparent;
 }
+
+h1{
+  font-size: 1.5em;
+}
+
+p{
+  color: var(--color-muted);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  main{
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 2.2em;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+}
+
+
+
 
 @media screen and (max-width:1024px){
   

@@ -1,20 +1,21 @@
 section#contacts{
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
 
-@media screen and (max-width:1024px) {
-  section#contacts{
-    flex-direction: column;
-  }
-}
-
 section#contacts > article{
+  flex: 1 1 200px;
+
+  padding:20px 30px;
   display: flex;
   justify-content: space-between;
-  padding:20px 30px;
+  align-items: center;
+  gap: 10px;
+
   border-radius: 35px;
   background-color: var(--color-surface);
 }
@@ -53,4 +54,32 @@ section#contacts h2{
 
 section#contacts p{
   font-size: 0.7em;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  section#contacts{
+    gap: 40px;
+    padding: 40px;
+  }
+  section#contacts > article{
+    flex: 1 1 200px;
+    
+    padding: 30px 40px;
+    border-radius: 50px;
+
+  }
+  section#contacts > article > div:first-child{
+    gap: 20px;
+  }
+  section#contacts .icon{
+    width: 50px;
+    height: 50px;
+  }
+  section#contacts h2{
+    font-size: 1.8em;
+  }
+
+  section#contacts p{
+    font-size: 1.3em;
+  }
 }
