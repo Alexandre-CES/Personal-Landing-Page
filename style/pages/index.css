@@ -91,6 +91,24 @@ div#code-block > div > div:nth-child(3) > p:nth-child(2){
   color: rgb(188, 41, 41);
 }
 
+span#code-pointer-block{
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(34, 37, 54, 0.493);
+  
+}
+
+span#code-pointer-block span{
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 section#my-function{
   margin: 0 10%;
 }
