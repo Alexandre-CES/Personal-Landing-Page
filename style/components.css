@@ -20,7 +20,6 @@ nav a{
 
 header{
   width: 100%;
-  height: 50px;
   background-color: var(--color-surface);
 }
 
@@ -42,13 +41,19 @@ header{
   background-color: var(--color-background);
 }
 
+@media screen and (max-width:767px){
+  header{
+    height: 50px;
+  }
+}
+
 @media screen and (max-width:1024px) {
   nav{
     position:fixed;
     bottom: 0;
   }
 
-  nav a > div:first-child{
+  nav a > div > div:first-child{
     display: flex;
     justify-content: center;
     
@@ -93,4 +98,18 @@ header{
     font-size: 1.5em;
   }
   
+}
+
+@media screen and (min-width:1025px){
+  nav{
+    gap: 50px;
+  }
+  nav a > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  nav img{
+    max-width: 20px;
+  }
 }
