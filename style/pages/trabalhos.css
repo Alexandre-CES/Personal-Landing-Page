@@ -30,6 +30,7 @@
 }
 
 .site-description{
+  justify-content: space-between;
   border-top: 1px solid var(--color-muted);
 }
 
@@ -65,6 +66,7 @@
   #jobs > article{
     margin: 20px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
   }
@@ -75,11 +77,13 @@
 
   .business{
     flex-basis: 30%;
+    border-radius: 30px 0 0 0;
   }
 
   .site{
     flex-basis: 70%;
     border-top: none;
+    border-radius: 0 30px 0 0;
   }
 
   #jobs .site-description{
@@ -88,6 +92,7 @@
 
   .site-description{
     border-top: 1px solid var(--color-muted);
+    border-radius: 0 0 30px 30px;
   }
 
   .site-description h2{
@@ -114,11 +119,12 @@
 
 @media screen and (min-width:1025px){
   #jobs > article{
-    gap: 10px;
+    gap: 9px;
   }
 
   .business{
     flex-basis: 15%;
+    border-radius: 30px 0 0 30px;
   }
 
   .logo-image img{
@@ -128,14 +134,21 @@
   .site{
     flex-basis: 50%;
     border-top: none;
+    border-radius: 0;
+  }
+
+  #jobs .site-description{
+    padding: 40px 30px;
   }
 
   .site-description{
     flex-basis: 33%;
     border-top: none;
+    border-radius: 0 30px 30px 0;
   }
 
   .site-description h2{
+    margin-top: 30px;
     font-size: 1.6em;
   }
 
