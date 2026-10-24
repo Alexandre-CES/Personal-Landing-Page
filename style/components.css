@@ -1,26 +1,18 @@
 nav{
+  position:fixed;
+  bottom: 0;
   z-index: 1;
   width: 100%;
   padding: 7px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  
-  text-align: center;
-
-  background-color: var(--color-surface);
-  
 }
 
-nav a{
-  color: var(--color-muted);
+nav img{
+  max-width: 20px;
 }
 
 header{
-  width: 100%;
-  background-color: var(--color-surface);
+  height: 50px;
 }
 
 .page-title{
@@ -41,31 +33,7 @@ header{
   background-color: var(--color-background);
 }
 
-@media screen and (max-width:767px){
-  header{
-    height: 50px;
-  }
-}
-
-@media screen and (max-width:1024px) {
-  nav{
-    position:fixed;
-    bottom: 0;
-  }
-
-  nav a > div > div:first-child{
-    display: flex;
-    justify-content: center;
-    
-  }
-
-  nav img{
-    max-width: 20px;
-  }
-  
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px){
   header{
     height: 100px;
   }
@@ -85,7 +53,6 @@ header{
   .page-title{
     margin: 60px;
   }
-
   
   .techs{
     gap: 20px;
@@ -101,15 +68,44 @@ header{
 }
 
 @media screen and (min-width:1025px){
+  header{
+    height:fit-content;
+  }
+
   nav{
+    position:initial;
     gap: 50px;
   }
-  nav a > div{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+  nav a{
+    font-size: 1.1em;
   }
+
+  nav a > div{
+    gap: 5px;
+  
+  }
+
   nav img{
     max-width: 20px;
+  }
+
+  nav span{
+    padding-top: 3px;
+  }  
+
+  .page-title{
+    margin: 10px 80px;
+  }
+
+  .techs{
+    gap: 20px;
+    margin: 40px 0;
+  }
+
+  .techs div{
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: .8em;
   }
 }

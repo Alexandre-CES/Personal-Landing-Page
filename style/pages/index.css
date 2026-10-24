@@ -2,90 +2,81 @@
 /* *Introduction */
 
 #introduction{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 80px;
+  margin-bottom: 150px;
 }
 
 #introduction > div:first-child{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 #logotipo{
   margin: 30px 0px;
-  text-align: center;
-  
 }
 
 #logotipo img{
-  border-radius: 100%;
   width: 250px;
 }
 
-#introduction-texts{
-  margin: auto;
-}
-
 #social-medias{
-  display: flex;
+  gap: 10px;
 }
 
 #social-medias > a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 35px;
+  padding: 5px;
   border: 1px solid var(--color-muted);
-  background-color: var(--color-surface);
+  border-radius: 10px;
 }
 
-/* Code block */
+/* 
+-------------------------------------------------------------------------
+  *Code block
+  ?Unique use css
+*/
 #code-block{
-  border-radius: 35px;
+  width: 350px;
+  padding: 20px 0px;
   color: var(--color-muted);
-  background-color: var(--color-surface);
 }
 
-#code-block > p{
+.code-filename{
   margin-bottom: 5px;
   text-align: right;
   padding-right: 20px;
   font-size: 0.8em;
 }
 
-#code-block > div:nth-child(2){
-  
+.code-text{
   padding: 10px 20px;
   border-top: 1px solid var(--color-muted);
   border-bottom: 1px solid var(--color-muted);
 }
 
-#code-block > div:nth-child(3){
-  margin: 15px 0px;
+.code-error{
+  margin-top: 15px;
   padding: 1px 20px;
   font-size: 0.8em;
   background-color: rgba(200,50,50, 0.5);
 }
 
-#code-block > div:nth-child(3) > p:nth-child(1){
-  color: rgb(255, 81, 81);
-}
-#code-block > div:nth-child(3) > p:nth-child(2){
-  color: rgb(188, 41, 41);
+.code-error > p{
+  color: rgb(173, 33, 33);
 }
 
-#code-pointer-block{
+.code-error > p:first-child{
+  filter: brightness(1.3); 
+}
+
+.code-pointer-block{
   display: inline-block;
   width: 95%;
   height: 100%;
   background-color: rgba(34, 37, 54, 0.493);
-  
 }
 
-#code-pointer-block span{
+.code-pointer-block span{
   animation: blink 1s step-end infinite;
 }
 
@@ -94,6 +85,7 @@
     opacity: 0;
   }
 }
+/*-------------------------------------------*/
 
 #my-function{
   margin: 0 10%;
@@ -104,14 +96,11 @@
 }
 
 #my-function > div{
-  display: flex;
   gap: 30px;
 }
 
 #my-function article{
   padding: 20px 15px;
-  border-radius: 25px;
-  background-color: var(--color-surface);
 }
 
 #my-function h3{
@@ -119,68 +108,15 @@
 }
 
 /*
-  * Mobile
+  *MEDIA QUERY
+------------------------------------------------------------------------------------------------
 */
-
-@media screen and (max-width:767px){
-  #introduction{
-    gap: 80px;
-    margin-bottom: 150px;
-  }
-
-  #introduction > div:first-child{
-    padding: 0 20px;
-    gap: 20px;
-  }
-
-  #social-medias{
-    gap: 10px;
-  }
-  
-  #social-medias > a{
-    width: 35px;
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  #code-block{
-    width: 350px;
-    padding: 20px 0px;
-  }
-}
-
-/*
-  *Tablet and mobile
-*/
-
-@media screen and (max-width:1024px){
-  #introduction-texts{
-    text-align: center;
-  }
-
-  #social-medias{
-    justify-content: center;
-  }
-
-  #code-block > div{
-    margin: auto;
-  }
-
-  h1{
-    text-align: center;
-  }
-
-  #my-function > div{
-    flex-direction: column;
-  }
-}
 
 /*
   *Tablet
 */
 
-@media screen and (min-width:768px) and (max-width:1024px){
-
+@media screen and (min-width:768px){
   #introduction{
     gap: 150px;
     margin-bottom: 300px;
@@ -188,7 +124,6 @@
 
   #introduction > div:first-child{
     gap: 50px;
-    padding: 0 20%;
   }
 
   #social-medias{
@@ -202,8 +137,9 @@
   }
 
   #code-block{
-    font-size: 2em;
     width: 600px;
+    padding: 30px 0;
+    font-size: 2em;
   }
 
   #code-block > p{
@@ -224,24 +160,14 @@
 }
 
 /*
-  *Tablet and Desktop
-*/
-
-@media screen and (min-width:768px){
-  #code-block{
-    padding: 30px 0;
-  }
-}
-
-/*
   *Desktop
 */
 
 @media screen and (min-width:1025px){
   #introduction{
+    margin: 0 50px 250px;
     margin-bottom: 250px;
     gap: 50px;
-    flex-direction: row;
   }
 
   #introduction > div:first-child{
@@ -249,8 +175,6 @@
   }
 
   #profile{
-    display: flex;
-    flex-direction: column;
     padding: 0 20%;
   }
 
@@ -267,7 +191,6 @@
   }
 
   #social-medias{
-    justify-content: left;
     gap: 30px;
     width: 100%;
     padding: 0 20%;
@@ -282,6 +205,7 @@
   #code-block{
     width: 500px;
     font-size: 1.5em;
+    padding: 40px 0;
   }
 
   #code-block > p{

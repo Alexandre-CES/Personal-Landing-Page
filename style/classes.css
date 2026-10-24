@@ -1,4 +1,7 @@
 
+/*
+  *buttons
+*/
 .btn{
   display: inline-block;
   position: relative;
@@ -24,6 +27,31 @@
   transform: scale(0.98);
 }
 
+/*
+  *border
+*/
+
+.rounded{
+  border-radius: clamp(10px, 3cqw, 35px); 
+}
+
+.rounded-full{
+  border-radius: 100%;
+}
+
+/*
+  *text
+*/
+.text-center{
+  text-align: center;
+}
+
+@media screen and (max-width:1024px){
+  .text-center-md{
+    text-align: center;
+  }
+}
+
 .text-primary{
   color: var(--color-primary);
 }
@@ -42,4 +70,42 @@
 
 .text-muted{
   color: var(--color-muted);
+}
+
+/*
+  *background
+*/
+
+.bg-surface{
+  background-color: var(--color-surface);
+}
+
+/*
+  *Flex
+*/
+
+.flex{
+  display: flex;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1024px){
+  .flex-center-md{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+@media screen and (max-width:1024px){
+  .flex-col-md{
+    flex-direction: column;
+  }
 }

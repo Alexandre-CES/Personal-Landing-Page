@@ -1,7 +1,6 @@
 
 #job-selection{
   margin-bottom: 10px;
-  text-align: center;
   font-size: 1.5em;
 }
 
@@ -10,44 +9,31 @@
   font-size: 1.5em;
 }
 
-#job-selection span{
-  color: var(--color-muted);
+#jobs > article > div{
+  padding: 10px;
 }
 
-section#jobs > article{
-  background-color: var(--color-surface);
-}
-
-section#jobs > article > div{
-  border-top: 1px solid var(--color-muted);
-}
-
-div.business h2{
+.business h2{
   font-size: 1.2em;
 }
 
-section#jobs > article img{
-  border-radius: 35px;
-}
-
-.business{
-  padding-top: 20px;
-  text-align: center;
-}
-
-div.logo-image img{
+.logo-image img{
   width: 200px;
 }
 
 .business h2{
-  margin: 10px;
+  margin-top: 10px;
 }
 
 .site{
-  padding: 20px;
+  border-top: 1px solid var(--color-muted);
 }
 
 .site-description{
+  border-top: 1px solid var(--color-muted);
+}
+
+#jobs .site-description{
   padding: 40px 20px;
 }
 
@@ -56,15 +42,7 @@ div.logo-image img{
   font-size: 1.3em;
 }
 
-.site-link{
-  display: flex;
-  justify-content: center;
-}
-
 .site-link a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
@@ -80,36 +58,35 @@ div.logo-image img{
 }
 
 @media screen and (min-width:768px){
-  section#jobs > article{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  section#jobs > article > div {
-    border-top: none;
-  }
-
-  section#jobs > article{
-    border-radius: 35px;
-  }
-
-}
-
-@media screen and (min-width:768px) and (max-width:1024px){
   #job-selection{
     font-size: 2em;
   }
 
-  section#jobs > article > div:nth-child(1){
-    flex-basis: 30%;
-  }
-  section#jobs > article > div:nth-child(2){
-    flex-basis: 70%;
+  #jobs > article{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
 
-  section#jobs .site-description{
+  #jobs > article > div{
+    padding: 20px;
+  }
+
+  .business{
+    flex-basis: 30%;
+  }
+
+  .site{
+    flex-basis: 70%;
+    border-top: none;
+  }
+
+  #jobs .site-description{
+    padding: 40px;
+  }
+
+  .site-description{
     border-top: 1px solid var(--color-muted);
   }
 
@@ -125,7 +102,52 @@ div.logo-image img{
     width: 32px;
     height: 32px;
   }
+
   .site-link{
+    justify-content: end;
+  }
+
+  .site-link a{
     font-size: 2em;
+  }
+}
+
+@media screen and (min-width:1025px){
+  #jobs > article{
+    gap: 10px;
+  }
+
+  .business{
+    flex-basis: 15%;
+  }
+
+  .logo-image img{
+    width: 150px;
+  }
+
+  .site{
+    flex-basis: 50%;
+    border-top: none;
+  }
+
+  .site-description{
+    flex-basis: 33%;
+    border-top: none;
+  }
+
+  .site-description h2{
+    font-size: 1.6em;
+  }
+
+  .site-description p{
+    font-size: 1.1em;
+  }
+
+  .site-link .icon{
+    width: 16px;
+    height: 16px;
+  }
+  .site-link a{
+    font-size: 1.5em;
   }
 }
