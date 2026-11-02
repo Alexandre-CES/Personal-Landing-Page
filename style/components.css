@@ -16,7 +16,10 @@ header{
 }
 
 .page-title{
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  margin-left: 10vw;
 }
 
 .techs{
@@ -51,7 +54,8 @@ header{
   }
 
   .page-title{
-    margin: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   
   .techs{
@@ -95,7 +99,8 @@ header{
   }  
 
   .page-title{
-    margin: 10px 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .techs{
