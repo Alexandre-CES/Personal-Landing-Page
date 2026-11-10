@@ -23,6 +23,11 @@
   filter: brightness(1.3); 
 }
 
+.btn:focus-visible{
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+
 .btn:active {
   transform: scale(0.98);
 }

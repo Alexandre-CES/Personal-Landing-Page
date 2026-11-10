@@ -1,16 +1,17 @@
 
-#job-selection{
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-#job-selection button{
-  color: var(--color-text);
-  font-size: 1.5em;
-}
-
 #jobs > article > div{
   padding: 10px;
+}
+
+#jobs > article{
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.site img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .business h2{
@@ -59,10 +60,6 @@
 }
 
 @media screen and (min-width:768px){
-  #job-selection{
-    font-size: 2em;
-  }
-
   #jobs > article{
     margin: 20px;
     display: flex;

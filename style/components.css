@@ -4,11 +4,15 @@ nav{
   z-index: 1;
   width: 100%;
   padding: 7px;
-  gap: 30px;
+  gap: clamp(12px, 4vw, 30px);
 }
 
 nav img{
   max-width: 20px;
+}
+
+nav a[aria-current="page"]{
+  color: var(--color-secondary);
 }
 
 header{
@@ -18,7 +22,6 @@ header{
 .page-title{
   margin-top: 20px;
   margin-bottom: 20px;
-
   margin-left: 10vw;
 }
 
@@ -46,11 +49,11 @@ header{
     gap: 50px;
   }
   nav a{
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 
   nav img{
-    max-width: 40px;
+    max-width: 28px;
   }
 
   .page-title{
@@ -82,7 +85,7 @@ header{
   }
 
   nav a{
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   nav a > div{
