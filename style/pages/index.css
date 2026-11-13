@@ -16,7 +16,10 @@
 }
 
 #logotipo img{
+  display: block;
   width: 250px;
+  height: auto;
+  margin-inline: auto;
 }
 
 #social-medias{
@@ -36,7 +39,7 @@
   ?Unique use css
 */
 #code-block{
-  width: 350px;
+  width: min(350px, calc(100vw - 32px));
   padding: 20px 0px;
   color: var(--color-muted);
 }
