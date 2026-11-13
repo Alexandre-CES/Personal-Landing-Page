@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="style/pages/index.css">
 </head>
 <body>
-  <header class="bg-surface">
+  <header>
     <nav class="flex flex-center text-center bg-surface">
     <a href="index.html" class="btn text-muted" aria-current="page">
       <div class="flex flex-col-md flex-center">
@@ -73,22 +73,28 @@
   </header>
   <main>
     <section id="introduction" class="flex flex-center flex-col-md">
-      <div class="flex flex-col flex-center">
+      <div class="hero-primary flex flex-col flex-center">
         <div id="profile" class="text-center-md flex flex-col">
-          <h1>
-            Olá, sou o <span class="text-secondary">Alexandre</span>
-          </h1>
-          <div id="logotipo" class="text-center">
-          <picture>
-            <source srcset="images/branding/logo.webp" type="image/webp">
-            <img src="images/branding/logo.png" alt="Logotipo pessoal de Alexandre" width="640" height="507" decoding="async" fetchpriority="high">
-          </picture>
+          <div class="hero-heading">
+            <div class="hero-heading-copy">
+              <p class="hero-eyebrow"><span></span> Desenvolvimento web · Portfólio pessoal</p>
+              <h1>
+                Olá, sou o <span class="text-secondary">Alexandre</span>
+              </h1>
+            </div>
+            <div id="profile-photo" class="profile-photo-frame">
+              <img src="images/branding/profile-photo.jpeg" alt="Foto de perfil de Alexandre Cabral" width="1254" height="1254" decoding="async" fetchpriority="high">
+            </div>
           </div>
-          <div>
-            <h2 class="text-primary">
-              Desenvolvedor de Software
+          <div class="hero-copy">
+            <h2>
+              Desenvolvedor de <span class="accent-pink">Software</span>
             </h2>
             <p>Desenvolvendo softwares, experimentando tecnologias e evoluindo.</p>
+            <div class="hero-actions">
+              <a href="pages/projetos.html" class="hero-action hero-action-primary">Explorar projetos <span aria-hidden="true">↗</span></a>
+              <a href="pages/contato.html" class="hero-action hero-action-secondary">Vamos conversar</a>
+            </div>
           </div>
         </div>
         <div id="social-medias" class="flex flex-center-md">
@@ -103,7 +109,7 @@
           </a>
         </div>
       </div>
-      <div id="code-block" class="rounded bg-surface">
+      <div id="code-block" class="rounded bg-surface" aria-label="Exemplo de código em Python">
         <p class="code-filename">developer.py</p>
         <div class="code-text">
 <pre><code>1  <span class="text-primary">class</span> <span class="text-secondary">Developer</span>:
@@ -122,22 +128,82 @@
         </div>
       </div>
     </section>
-    <section id="my-function">
-      <h2>O que eu faço?</h2>
+    <section id="my-function" aria-labelledby="services-title">
+      <div class="services-heading">
+        <p class="services-eyebrow"><span>01</span> Como posso ajudar</p>
+        <h2 id="services-title">O que eu faço?</h2>
+        <p class="services-intro">Do primeiro contato com a sua marca até as ferramentas que fazem o negócio funcionar.</p>
+      </div>
 
-      <div class="flex flex-col-md">
-        <article class="rounded bg-surface">
-          <h3>Landing Pages</h3>
-          <p>Uma página web criada para apresentar seu negócio e transformar o visitante em um possível cliente</p>
+      <div class="services-grid">
+        <article class="service-card service-card--landing">
+          <div class="service-card-top">
+            <span class="service-index">01 <span>/ 03</span></span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="5" y="8" width="38" height="31" rx="5" />
+                <path d="M5 16h38M12 12h.01M17 12h.01M22 12h.01M14 25h12M14 30h7M31 25h6v9h-6z" />
+              </svg>
+            </span>
+          </div>
+          <h3>Landing pages</h3>
+          <p>Páginas que apresentam seu negócio com clareza e ajudam visitantes a dar o próximo passo.</p>
+          <ul class="service-points">
+            <li>Layout adaptado para celular</li>
+            <li>Conteúdo organizado para conversão</li>
+          </ul>
+          <span class="service-tag">Presença digital</span>
         </article>
-        <article class="rounded bg-surface">
-          <h3>Integração de API REST</h3>
-          <p>Conexão de sistemas para fazer plataformas diferentes conversarem entre si, automatizarem processos e compartilharem dados em tempo real.</p>
+
+        <article class="service-card service-card--api">
+          <div class="service-card-top">
+            <span class="service-index">02 <span>/ 03</span></span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="11" cy="24" r="5" />
+                <circle cx="37" cy="12" r="5" />
+                <circle cx="37" cy="36" r="5" />
+                <path d="m16 22 16-8M16 26l16 8" />
+              </svg>
+            </span>
+          </div>
+          <h3>Integração de APIs</h3>
+          <p>Conecto plataformas para trocar informações e automatizar etapas do seu processo.</p>
+          <ul class="service-points">
+            <li>Integração com serviços existentes</li>
+            <li>Fluxo de dados entre sistemas</li>
+          </ul>
+          <span class="service-tag">Sistemas conectados</span>
         </article>
-        <article class="rounded bg-surface">
-          <h3>Aplicativos Web</h3>
-          <p>Sistemas web completos com controle de acesso seguro e gerenciamento eficiente de dados para o controle total do seu negócio.</p>
+
+        <article class="service-card service-card--apps">
+          <div class="service-card-top">
+            <span class="service-index">03 <span>/ 03</span></span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="6" width="15" height="15" rx="4" />
+                <rect x="27" y="6" width="15" height="10" rx="4" />
+                <rect x="6" y="27" width="15" height="15" rx="4" />
+                <rect x="27" y="22" width="15" height="20" rx="4" />
+              </svg>
+            </span>
+          </div>
+          <h3>Aplicativos web</h3>
+          <p>Sistemas feitos para organizar informações, simplificar tarefas e apoiar a rotina do seu negócio.</p>
+          <ul class="service-points">
+            <li>Funcionalidades sob medida</li>
+            <li>Gestão de dados e usuários</li>
+          </ul>
+          <span class="service-tag">Ferramentas sob medida</span>
         </article>
+      </div>
+
+      <div class="services-cta">
+        <div>
+          <p>Tem um projeto em mente?</p>
+          <h3>Vamos <span class="accent-pink">conversar.</span></h3>
+        </div>
+        <a href="pages/contato.html" class="services-cta-link">Entre em contato <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>

@@ -5,28 +5,37 @@
   box-sizing: border-box;
 }
 
+html{
+  min-height: 100%;
+  background-color: var(--color-background);
+}
+
 :root{
   --color-background:#080A10;
   --color-surface:#10131C;
+  --color-border:rgba(133, 138, 153, 0.22);
 
   --color-text:#F2F2F5;
   --color-muted: #858A99;
 
   --color-primary:#EF49F2;
+  --color-primary-soft:#D78BD9;
   --color-secondary:#05DBF2;
 
   --font-code: monospace;
 }
 
 body{
+  min-height: 100vh;
   color: var(--color-text);
   background-color: var(--color-background);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
 }
 
 main{
-  margin-top: 50px;
-  margin-bottom: 100px;
+  width: min(1160px, calc(100% - 32px));
+  margin: clamp(36px, 6vw, 72px) auto 120px;
 }
 
 li{
@@ -47,11 +56,24 @@ button{
 }
 
 h1{
-  font-size: 1.5em;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+h2{
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+h3{
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 p{
   color: var(--color-muted);
+  line-height: 1.65;
 }
 
 a:focus-visible,
@@ -62,26 +84,16 @@ button:focus-visible{
 
 @media screen and (min-width:768px){
   main{
-    margin-top: 100px;
-    margin-bottom: 300px;
+    margin-top: 64px;
+    margin-bottom: 140px;
   }
-
-  h1{ font-size: 2.5em; }
-  h2{ font-size: 2.2em; }
-  h3{ font-size: 2em; }
-  p{ font-size: 1.5em; }
 }
 
 @media screen and (min-width:1025px){
   main{
-    margin-top: 60px;
-    margin-bottom: 150px;
+    margin-top: 54px;
+    margin-bottom: 120px;
   }
-
-  h1{ font-size: 1.5em; }
-  h2{ font-size: 1.5em; }
-  h3{ font-size: 1.2em; }
-  p{ font-size: 1em; }
 }
 
 @media (prefers-reduced-motion: reduce){

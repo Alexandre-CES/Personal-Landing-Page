@@ -1,36 +1,45 @@
 #contacts{
-  width: 100%;
-  max-width: 800px;
-  margin: 36px auto 0;
-  padding: 0 20px;
-  flex-wrap: wrap;
-  gap: 16px;
-  
+  display: grid;
+  width: min(860px, 100%);
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  margin: 0 auto;
 }
 
 .contact-title{
-  margin-left: 0;
+  max-width: 680px;
   text-align: center;
 }
 
 #contacts > article{
-  width: min(300px, 100%);
-  padding:20px 30px;
-  
-  justify-content: space-between;
+  display: flex;
+  min-width: 0;
   align-items: center;
-  gap: 10px;
-  
-  border-radius: 35px;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-surface);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#contacts > article:hover{
+  transform: translateY(-3px);
+  border-color: rgba(215, 139, 217, 0.42);
 }
 
 #contacts > article > div:first-child{
-  gap: 10px;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 13px;
 }
 
 #contacts .icon{
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
 }
 
 #contacts .link-icon{
@@ -48,71 +57,51 @@
 #contacts .email-icon{
   mask: url('../../images/icons/email.svg') center / contain no-repeat;
   -webkit-mask: url('../../images/icons/email.svg') center / contain no-repeat;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
-
 #contacts h2{
-  font-size: 1em;
+  margin-bottom: 2px;
+  font-size: 1rem;
 }
 
 #contacts p{
-  font-size: 0.7em;
+  overflow-wrap: anywhere;
+  font-size: 0.88rem;
 }
 
-@media screen and (min-width:768px){
+#contacts article > div:last-child a{
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+#contacts article > div:last-child .icon{
+  width: 17px;
+  height: 17px;
+}
+
+@media screen and (min-width: 640px){
   #contacts{
-    padding: 0 20px;
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   #contacts > article{
-    width: 500px;
-    padding: 30px 40px;
-    border-radius: 50px;
+    padding: 20px;
   }
+}
 
-  #contacts > article > div:first-child{
+@media screen and (min-width: 1025px){
+  #contacts{
     gap: 20px;
   }
 
-  #contacts .icon{
-    width: 50px;
-    height: 50px;
-  }
-
-  #contacts h2{
-    font-size: 1.8em;
-  }
-
-  #contacts p{
-    font-size: 1.3em;
-  }
-}
-
-@media screen and (min-width:1025px){
-  #contacts{
-    margin: 36px auto 0;
-    justify-content: center;
-    gap: 24px;
-  }
-
   #contacts > article{
-    width: 350px;
-    padding: 20px 30px;
-    border-radius: 50px;
-  }
-
-  #contacts .icon{
-    width: 32px;
-    height: 32px;
-  }
-
-  #contacts h2{
-    font-size: 1.1em;
-  }
-
-  #contacts p{
-    font-size: .8em;
+    padding: 24px;
   }
 }
